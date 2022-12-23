@@ -1,0 +1,81 @@
+section {
+  background-color: #f5f5f5;
+  transform: translate(100%, 50%);
+  display: inline-block;
+  width: 30%;
+  padding: 1% 1.5% 1% 1.5%;
+  height: 300px;
+  transform-origin: center;
+}
+section .container {
+  background-color: #9FCDCD;
+  padding: 1%;
+  background-image: url(img/moon_flag.png);
+  background-size: 200px;
+  margin: auto;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-position-y: 16vh;
+  background-position-x: 115%;
+  border-radius: 10px;
+  height: 90%;
+}
+section .CardNamber {
+  margin: 2%;
+  font-size: 0.8rem;
+  color: #466C6F;
+}
+section .Expiry {
+  display: flex;
+  justify-content: space-between;
+  width: 57%;
+}
+section .Expiry input {
+  width: 20%;
+  padding-left: 3%;
+  margin: 3%;
+}
+section .container div:nth-of-type(1) {
+  background-color: #DB6423;
+  color: white;
+  margin-left: -5%;
+  display: inline-block;
+  width: 70%;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 4%;
+  font-size: 0.8rem;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 50%;
+  height: 3vh;
+  outline: none;
+  padding-left: 3%;
+  margin-left: 2%;
+}
+
+input::-moz-placeholder {
+  color: #466C6F;
+}
+
+input:-ms-input-placeholder {
+  color: #466C6F;
+}
+
+input::placeholder {
+  color: #466C6F;
+}
+
+.CVV {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin-top: 2%;
+  font-size: 0.8rem;
+  color: #69A0B1;
+}/*# sourceMappingURL=exercise1.css.map */

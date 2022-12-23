@@ -1,0 +1,204 @@
+@import url(_displayflex.scss);
+section {
+  background-color: #f5f5f5;
+  width: 60%;
+  margin: auto;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+section .inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+section .inputs-1 {
+  border: 1px solid gray;
+  padding-left: 2%;
+  width: 20%;
+  outline: none;
+  height: 25px;
+}
+section .inputs-2 {
+  border: 1px solid green;
+  padding-left: 2%;
+  background-image: url(img/valid.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  width: 20%;
+  outline: none;
+  height: 25px;
+}
+section .inputs-2::-moz-placeholder {
+  color: #2C7731;
+}
+section .inputs-2:-ms-input-placeholder {
+  color: #2C7731;
+}
+section .inputs-2::placeholder {
+  color: #2C7731;
+}
+section .inputs-3 {
+  border: 1px solid palevioletred;
+  padding-left: 2%;
+  background-image: url(img/invalid.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  width: 20%;
+  outline: none;
+  height: 25px;
+}
+section .inputs-3::-moz-placeholder {
+  color: palevioletred;
+}
+section .inputs-3:-ms-input-placeholder {
+  color: palevioletred;
+}
+section .inputs-3::placeholder {
+  color: palevioletred;
+}
+section .chechboxWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+section .chechboxWrapper {
+  --width: 20px;
+  --height: 20px;
+  --offset: 20px;
+}
+section .chechboxWrapper div:nth-child(1) {
+  border: 1px solid green;
+  background-color: white;
+  height: calc(var(--height) + 5px);
+  width: calc(var(--width) + var(--width) + 3px);
+}
+section .chechbox-1 {
+  margin-top: 2px;
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  background-color: #41AD49;
+  border-radius: 5px;
+  border: 1px solid green;
+  left: 1px;
+}
+section .chechbox-1:before {
+  content: "";
+  position: absolute;
+  top: var(--offset);
+}
+section .inpit-1:checked ~ .chechbox-1 {
+  background-color: #41AD49;
+  left: calc(var(--offset));
+}
+section .inpit-1 {
+  display: none;
+}
+section .chechboxWrapper div:nth-of-type(3) {
+  border: 1px solid green;
+  background-color: white;
+  width: calc(var(--width) + var(--width) + 3px);
+}
+section .chechbox-2 {
+  position: relative;
+  margin-top: 2px;
+  width: var(--width);
+  height: var(--height);
+  border-radius: 5px;
+  background-color: #97293F;
+  left: 1px;
+  border: 1px solid #97293F;
+}
+section .chechbox-2::before {
+  position: absolute;
+  content: "";
+  top: var(--offset);
+}
+section .inpit-2:checked ~ .chechbox-2 {
+  left: calc(var(--offset));
+}
+section .inpit-2 {
+  display: none;
+}
+section .radio-1,
+section .radio-2 {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #41AD49;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+}
+section .radio-1:checked::before,
+section .radio-2:checked::before {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0.3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #41AD49;
+  content: "";
+}
+section .buttons {
+  display: flex;
+  gap: 10px;
+}
+section .button-1,
+section .button-2,
+section .button-3,
+section .button-4,
+section .button-5,
+section .button-6,
+section .button-7 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  justify-content: center;
+  color: white;
+  height: 30px;
+}
+section .button-1 {
+  background-color: #41AD49;
+}
+section .button-2 {
+  background-color: #2C7731;
+}
+section .button-3 {
+  background-color: #E44061;
+}
+section .button-4 {
+  background-color: #97293F;
+}
+section .button-5 {
+  background-color: #808080;
+}
+section .button-6 {
+  background-color: #41AD49;
+}
+section .button-7 {
+  background-color: #E44061;
+}
+section .button-6,
+section .button-7 {
+  border-radius: 50px;
+  width: 30px;
+}
+section .textarea {
+  padding-left: 5%;
+  outline: none;
+  padding-top: 1%;
+}/*# sourceMappingURL=exersice2.css.map */
